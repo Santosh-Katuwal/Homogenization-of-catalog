@@ -40,7 +40,7 @@ import datetime as dt
 
 #Reading Raw Catalog
 cwd=os.getcwd()
-cat=pd.read_csv(cwd+'\\input\\catalog.csv')
+cat=pd.read_csv(cwd+'\\input_catalog.csv')
 
 YYYY=[]
 MM=[]
@@ -143,7 +143,7 @@ out=pd.DataFrame({'yyyy':yyyy,
                   'magType':combined.magType})
  
 OUT=out   
-OUT.to_csv(cwd+'\\homogenized.csv', index = False)
+OUT.to_csv(cwd+'\\out_homogenized.csv', index = False)
     
 
     
